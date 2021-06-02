@@ -17,7 +17,8 @@ This package is a python converter of clear sky modules coded in R acquired from
 As an example check example.py
 
 All models expect an input of numpy.datetime64 date and solar zenith angle (sza) as float or numpy.array. The sza serves as a control for the time and latitude/longitude coordinates, which are not explicitely required as input. 
-For calculation of sza, see: https://gitea.tropos.de/deneke/trosat-base (sunpos)
+For calculation of sza, see: https://github.com/hdeneke/trosat-base
+`pip install git+https://github.com/hdeneke/trosat-base.git#egg=trosat-base`
 
 Further inputs (e.g. altitude, pressure, ozone...) are expected as float or array with the same shape as sza. See models.py for individual model requirements.
 
