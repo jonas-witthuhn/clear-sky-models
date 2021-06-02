@@ -1,3 +1,32 @@
+# Clear sky Models
+
+These clear sky models can be used to estimate the surface shortwave broadband global/direct/diffuse irradiance at a given location and time. The models varii strongly in complexity and requirements of input. 
+This package is a python converter of clear sky modules coded in R acquired from Jamie Brights GitHub: https://github.com/JamieMBright/clear-sky-models
+
+# Requirements:
+ - numpy
+ - rpy2
+ - matplotlib (only example.py)
+ example will run with using the conda environment:
+ `conda env create -f environment.yml`
+
+# Install:
+` pip install git+https://github.com/jonas-witthuhn/clear-sky-models.git#egg=clear_sky_models `
+
+# Usage:
+As an example check example.py
+
+All models expect an input of numpy.datetime64 date and solar zenith angle (sza) as float or numpy.array. The sza serves as a control for the time and latitude/longitude coordinates, which are not explicitely required as input. 
+For calculation of sza, see: https://gitea.tropos.de/deneke/trosat-base (sunpos)
+
+Further inputs (e.g. altitude, pressure, ozone...) are expected as float or array with the same shape as sza. See models.py for individual model requirements.
+
+
+
+# Forked from JamieMBright
+
+---
+
 # Welcome to the clear-sky irradiance model library
 This Github repository contains many clear-sky irradiance models as coded in R. Occasionally a model will be available in Matlab, though this is not an objective of ours.
 This repository was created to coincide with our research publication titled "Worldwide performance assessment of 75 global clear-sky irradiance models using Principal Component Analysis" published in the Journal of Renewable and Sustainable Energy Reviews and authored by Xixi Sun, Jamie M. Bright, Christian A. Gueymard, Brendan Acord, Peng Wang and Nicholas A. Engerer.
