@@ -28,7 +28,7 @@ IrradianceYangWalsh<-function(){
 		
     ###Quality control
     lower=0
-    Eghschulze[Eghyangwalsh<lower]=0
+    Eghyangwalsh[Eghyangwalsh<lower]=0
 	return(Eghyangwalsh)
 	}
 	

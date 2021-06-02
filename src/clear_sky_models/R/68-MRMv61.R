@@ -60,7 +60,8 @@ IrradianceMRM61<-function(){
     #broadband transmission function for aerosol total extinction(scattering and absorption)
     ## JAMIEs MATLAB CODE TO BE CONVERTED AND ADDED HERE.
     # Produces Taa, Taer, Tas.
-    aerosol_table = as.matrix(read.table('AEROSOL-TABLE.txt',header=FALSE,sep=',')); 
+    # Comment out next line if R version is used without the python interface
+    # aerosol_table = as.matrix(read.table('AEROSOL-TABLE.txt',header=FALSE,sep=',')); 
     wavelength = aerosol_table[,1];
     ET =aerosol_table[,2];
     AODtable = aerosol_table[,3:6];

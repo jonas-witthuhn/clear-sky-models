@@ -1,0 +1,11 @@
+name: CSM
+channels:
+  - r
+  - conda-forge
+  - defaults
+dependencies:
+  - matplotlib
+  - rpy2
+  - numpy
+prefix: /home/walther/.conda/envs/CSM
+
